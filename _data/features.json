@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Certified Lash Stylist",
+    "description": "ให้บริการโดยช่างต่อขนตามืออาชีพที่ผ่านการรับรอง",
+    "image": {
+      "url": "images/features/noun-checkmark-2193580.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Private Lash Studio",
+    "description": "สตูดิโอเสริมสวยส่วนตัว บางใหญ่ นนทบุรี",
+    "image": {
+      "url": "images/features/noun-studio-3865233.svg",
+      "width": 80,
+      "height": 80
+    }
+  },
+  {
+    "title": "Convenient Location",
+    "description": "ทำเลใจกลางเมืองและสะดวกสบาย เข้าถึงได้ง่ายด้วยรถยนต์และ MRT (ตลาดบางใหญ่)",
+    "image": {
+      "url": "images/features/noun-location-5380149.svg",
+      "width": 80,
+      "height": 80
+    }
+  }
+]

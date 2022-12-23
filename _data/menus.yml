@@ -1,0 +1,10 @@
+main:
+  - name: "Contact"
+    url: "/contact/"
+    weight: 3
+
+footer:
+  - name: "Home"
+  - name: "Contact"
+    url: "/contact/"
+    weight: 1
