@@ -1,22 +1,25 @@
 <div class="call">
   <div class="call-box-top">
     {% if site.data.contact.phone %}
-        <div class="call-phone"><i class="fa fa-phone contact-icon"></i> {{ site.data.contact.phone }} </div>
+        <div class="call-item call-phone"><i class="fa fa-phone contact-icon"></i>
+          <a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a></div>
     {% endif %}
     {% if site.data.contact.email %}
-    <div class="call-email"><i class="fa fa-instagram contact-icon"></i>
+    <div class="call-item call-email"><i class="fa fa-instagram contact-icon"></i>
       <a href="{{ site.data.contact.email.url }}">
         {{ site.data.contact.email.display }}
       </a>
     </div>
     {% endif %}
     {% if site.data.contact.line %}
-    <div class="call-line"><i class="fa fa-comment contact-icon"></i>
+    <div class="call-item call-line"><i class="fa fa-comment contact-icon"></i>
       <a href="{{ site.data.contact.line.url }}">
         {{ site.data.contact.line.display }}
       </a>
     </div>
-    <div><i class="fa fa-calendar contact-icon"></i>เริ่มคิวตั้งแต่เวลา 11:00-19:00</div>
+    <div class="call-item"><i class="fa fa-calendar contact-icon"></i> เริ่มคิวตั้งแต่เวลา 11:00-19:00</div>
+    <div class="call-item"><i class="fa fa-train contact-icon"></i> MRT สถานีตลาดบางใหญ่</div>
+    <div class="call-item"><i class="fa fa-map-marker contact-icon"></i> ติดเซ็นทรัลเวสเกต</div>
     {% endif %}
   </div>
     {% if include.show_button %}

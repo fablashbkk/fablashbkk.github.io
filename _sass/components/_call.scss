@@ -29,15 +29,19 @@
       flex: 0 0 auto;
       border: none;
     }
+    .button {
+      font-size:1.2em;
+      font-weight:700;
+    }
   }
   .call-name {
     font-size: 1.1rem;
     font-weight: bold;
   }
-  .call-phone, .call-email, .call-line {
+  .call-item {
     margin-bottom: 5px;
   }
-  .call-email, .call-line {
+  .call-item {
     a {
       color: $black;
     }
