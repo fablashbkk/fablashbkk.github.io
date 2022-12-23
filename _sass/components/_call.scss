@@ -34,13 +34,16 @@
     font-size: 1.1rem;
     font-weight: bold;
   }
-  .call-phone {
+  .call-phone, .call-email, .call-line {
     margin-bottom: 5px;
   }
-  .call-email {
+  .call-email, .call-line {
     a {
       color: $black;
     }
+  }
+  .contact-icon {
+    width: 1.2em;
   }
   strong {
     font-weight: bold;

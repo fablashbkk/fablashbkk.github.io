@@ -3,5 +3,10 @@
     "name": "Instagram",
     "link": "https://www.instagram.com/fablashbkk/",
     "image": "images/social/instagram.svg"
+  },
+  {
+    "name": "Line",
+    "link": "http://line.me/ti/p/~fablashbkk",
+    "image": "images/social/line.svg"
   }
 ]
