@@ -4,7 +4,7 @@ layout: contact
 description: Contact
 ---
 
-Open daily for your service. Appointments possible at 11.00, 15.00 and 19.00
+Open daily for your service.
 
 | Day       | Opening Hours   |
 |-----------|-----------------|

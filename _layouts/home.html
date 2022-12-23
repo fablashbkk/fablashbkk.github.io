@@ -33,7 +33,7 @@ bodyClass: "page-home"
       {% assign limit = site.home.limit_services | default: 6 %}
       {% assign sorted_services = site.services | sort: 'weight' %}
       {% for service in sorted_services limit: 9 %}
-      <div class="col-12 col-md-4 mb-1">
+      <div class="col-12 col-md-5 col-lg-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
