@@ -1,13 +1,17 @@
 .page-service {
   .content {
-    > p {
-      &:first-of-type {
-        font-size: 1.6rem;
-        line-height: 1.4;
-        margin-bottom: 40px;
-        font-weight: regular;
-        color: rgb(104, 104, 104);
-      }
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: 2em;
+    margin-bottom: 40px;
+    font-weight: regular;
+    color: rgb(104, 104, 104);
+    ul {
+      list-style: none;
+    }
+
+    ul li:before {
+      content: '✔ ';
     }
   }
 }

@@ -3,13 +3,40 @@ layout: default
 bodyClass: "page-service"
 ---
 
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="container pt-3 pt-md-5">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
-      <div class="service service-single">
+      <div class="service service-single" style="margin-bottom: 3em;">
         <h1 class="title">{{page.title}}</h1>
-        <div class="content">{{content}}</div>
+        <h3>{{ page.price }} ฿</h3>
+        <div class="feature-image">
+          <img alt="{{ page.title }} logo"
+               src="{{ page.image | relative_url }}" width="266px" height="200px" style="border-radius: 5%;"/>
+        </div>
+        <div class="content">
+          {{content}}
+        </div>
+          {% include call.html show_button=true %}
+
+        <div class="content">
+          <p>ผลงานขึ้นอยู่กับรูปตาแต่ละคน สามารถแจ้งช่างได้หากต้องการความแน่นปังหรือเน้นแบบแนวซอฟ &#128525; เลือกความงอน ความยาวได้</p>
+          <ul>
+            <li>เติมฟรีรับประกันงานใน 3 วัน</li>
+            <li>เบาสบาย ไม่รู้สึกรำคาญ</li>
+            <li>กาวไม่ฉุน ไม่แสบตา</li>
+            <li>ใช้ขนมิ้งญี่ปุ่นนำเข้า</li>
+            <li>การต่อแบบไร้ปมกาว</li>
+            <li>ทักแชทสำหรับจองคิว</li>
+            <li>เริ่มคิวตั้งแต่เวลา 11:00-19:00</li>
+            <li>มีที่จอดรถฟรี 3 ชม</li>
+            <li>️อุปกรณ์สะอาด ปลอดเชื้อ</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+{% include testimonials.html %}
+{% include book_button.html %}
+{% include google_map.html %}

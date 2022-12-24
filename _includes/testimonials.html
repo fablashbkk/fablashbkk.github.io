@@ -1,0 +1,19 @@
+<div class="strip">
+  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
+
+    <h1 style="text-align:center;">Testimonials</h1>
+
+    {% for example in site.examples %}
+    <div class="row justify-content-center" style="margin-bottom:3em;">
+      <div class="col-12 col-lg-5">
+        <div><h2 style="text-align:center;">before</h2></div>
+        <div class="beforeafter-image align-content-center"><img alt="before lash extension" src="{{ example.before_image | relative_url }}" width="100%" /></div>
+      </div>
+      <div class="col-12 col-lg-7">
+        <div><h2 style="text-align:center;">after</h2></div>
+        <div class="beforeafter-image align-content-center"><img alt="after lash extension" src="{{ example.after_image | relative_url }}" width="100%" /></div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

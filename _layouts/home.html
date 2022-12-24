@@ -34,8 +34,11 @@ bodyClass: "page-home"
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      <div class="col-12 position-relative"><p style="font-size: 1.1em">
-      มีขนตาฟาดๆแบบตื่นมาสวยเลย เริ่มต้นเพียง 590.- ปรึกษาฟรี!!! สำหรับสาวๆที่ไม่มั่นใจว่าขนตาแบบไหนจะเหมาะกับดวงตาของตัวเอง &#128065;️ ทักเลยค่ะ &#9996;</p>
+      <div class="col-12 position-relative">
+        <p style="font-size: 1.1em">
+      มีขนตาฟาดๆแบบตื่นมาสวยเลย เริ่มต้นเพียง 590.- ปรึกษาฟรี!!! สำหรับสาวๆที่ไม่มั่นใจว่าขนตาแบบไหนจะเหมาะกับดวงตาของตัวเอง &#128065;️ ทักเลยค่ะ &#9996;
+        </p>
+        <p>ขอบคุณลูกค้าที่น่ารักทุกคนนะคะที่ไว้ใจและให้โอกาสช่าง ยินดีรับฟังทุกคำติชมและจะทำให้ดีที่สุดค่า &#128522;&#128591;</p>
       </div>
     </div>
     <div class="row justify-content-start">
@@ -46,10 +49,12 @@ bodyClass: "page-home"
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
+              <a href="{{ service.url | relative_url }}">
               {{ service.title }}
+              </a>
             </h2>
             <h3>{{ service.price }} ฿</h3>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+            <p>{{ service.content | markdownify | strip_html | truncate: 80 }}</p>
             <div class="feature-image"><img alt="{{ feature.title }} logo" src="{{ service.image | relative_url }}" width="266px" height="200px" style="border-radius: 5%;"/></div>
           </div>
         </div>
@@ -89,36 +94,9 @@ bodyClass: "page-home"
 </div>
 {% endif %}
 
-<div class="strip">
-  <div class="container pt-6 pb-6 pt-md-10 pb-md-10">
-
-    <h1 style="text-align:center;">Testimonials</h1>
-
-    {% for example in site.examples %}
-    <div class="row justify-content-center" style="margin-bottom:3em;">
-      <div class="col-12 col-lg-5">
-        <div><h2 style="text-align:center;">before</h2></div>
-        <div class="beforeafter-image align-content-center"><img alt="before lash extension" src="{{ example.before_image | relative_url }}" width="100%" /></div>
-      </div>
-      <div class="col-12 col-lg-7">
-        <div><h2 style="text-align:center;">after</h2></div>
-        <div class="beforeafter-image align-content-center"><img alt="after lash extension" src="{{ example.after_image | relative_url }}" width="100%" /></div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<div class="strip">
-  <div class="row justify-content-center" style="margin:0; margin-bottom:3em;">
-    <div class="home-call-button">
-      <a onclick="return gtag_report_conversion('{{ site.data.contact.contact_button_link }}')" href="{{ site.data.contact.contact_button_link }}" class="button">BOOK NOW</a>
-      <div style="text-align: center; margin-top:0.5em;">เริ่มคิวตั้งแต่เวลา 11:00-19:00</div>
-    </div>
-  </div>
-</div>
-
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123998.56686660102!2d100.47664632233388!3d13.78157337098386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e291e084880913%3A0xc6c4d1d20e6a619d!2z4Lij4LmJ4Liy4LiZ4LiV4LmI4Lit4LiC4LiZ4LiV4LiyIOC4muC4suC4h-C5g-C4q-C4jeC5iCBFWUVMQVNIIEVYVEVOU0lPTlMgRkFCTEFTSA!5e0!3m2!1sen!2sch!4v1671788695955!5m2!1sen!2sch" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% include testimonials.html %}
+{% include book_button.html %}
+{% include google_map.html %}
 
 {% if page.show_calendly %}
 <div class="strip strip-grey">
