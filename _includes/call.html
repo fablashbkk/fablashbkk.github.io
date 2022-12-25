@@ -2,18 +2,18 @@
   <div class="call-box-top">
     {% if site.data.contact.phone %}
         <div class="call-item call-phone"><i class="fa fa-phone contact-icon"></i>
-          <a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a></div>
+          <a class="contact-phone-conversion" href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a></div>
     {% endif %}
     {% if site.data.contact.email %}
     <div class="call-item call-email"><i class="fa fa-instagram contact-icon"></i>
-      <a href="{{ site.data.contact.email.url }}">
+      <a class="contact-email-conversion" href="{{ site.data.contact.email.url }}">
         {{ site.data.contact.email.display }}
       </a>
     </div>
     {% endif %}
     {% if site.data.contact.line %}
     <div class="call-item call-line"><i class="fa fa-comment contact-icon"></i>
-      <a href="{{ site.data.contact.line.url }}">
+      <a class="contact-line-conversion" href="{{ site.data.contact.line.url }}">
         {{ site.data.contact.line.display }}
       </a>
     </div>
@@ -24,7 +24,7 @@
   </div>
     {% if include.show_button %}
       <div class="call-box-bottom">
-        <a href="{{ site.data.contact.contact_button_link }}" class="button">BOOK APPOINTMENT</a>
+        <a class="contact-button-conversion" href="{{ site.data.contact.contact_button_link }}" class="button">BOOK APPOINTMENT</a>
       </div>
     {% endif %}
   <br/>
